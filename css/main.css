@@ -1,0 +1,157 @@
+html, body {
+  height: 100%; /* Ensure parent elements have full height */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, h7, p, div, span, ul, li{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 30px;
+  color: #222;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+p{
+  font-size: 16px;
+  color: #222;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+body{
+  display: flex;
+  align-items: stretch;
+  overflow-x: hidden
+}
+
+/* --------------------------- Account Nav */
+
+.accountNav{
+  width: 64px;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #E5E5E5;
+  height: 100%;
+}
+.accountNav img{
+  width: 64px;
+}
+
+/* --------------------------- Module Menu */
+
+.moduleMenu{
+  z-index: 1;
+  width: 265px;
+  transition: all 0.3s ease-in-out;
+  border-right: 1px solid #E5E5E5;
+  margin-right: 20px;
+}
+.moduleMenu.hidden{
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  border: none;
+  margin-right: 0;
+}
+.moduleMenu img{
+  height: 640px;
+  width: 265px;
+}
+/* --------------------------- Module Menu Button */
+.moduleMenuButton {
+  z-index: 10;
+  width: 50px;
+  height: auto;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.moduleMenuButton.hidden{
+  width: 0;
+  opacity: 0;
+}
+.moduleMenuButton img{
+  height: 85px;
+  width: 30px;
+}
+
+/* --------------------------- Main Content */
+.mainContent {
+  height: 100%;
+  flex-grow: 1;
+  padding: 10px 30px 0 10px;
+  display: flex;
+  justify-content: center;
+}
+.mainContentInnerWrap{
+  max-width: 900px;
+}
+.mainContentInnerWrap img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; 
+  width: auto;
+  display: block;
+}
+
+/* --------------------------- AiTutor */
+.aiTutor{
+  background-color: white;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-left: 1px solid #E5E5E5;
+  transition: all 0.3s ease-in-out;
+}
+.aiTutor.hidden {
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  border: none;
+}
+.aiTutor .ai_top{
+  height: 286px;
+  width: 420px;
+}
+.aiTutor .ai_bottom{
+  height: 95px;
+  width: 420px;
+}
+
+
+.aiIcon{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.aiIcon.hidden {
+  opacity: 0;
+  bottom: -50px;
+}
+.aiIcon img{
+  height: 56px;
+  width: 56px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+}
